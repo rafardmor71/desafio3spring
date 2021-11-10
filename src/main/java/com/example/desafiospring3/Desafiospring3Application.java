@@ -58,12 +58,12 @@ public class Desafiospring3Application implements CommandLineRunner {
 		
 		//Borrar Cliente
 		clienteService.borrarCliente(cliente1);
-		System.out.println("Cliente con DNI:  + " + cliente1.getDNI() + " borrado correctamente");
+		System.out.println("Cliente con DNI: " + cliente1.getDNI() + " borrado correctamente");
 		
 		//Modificar Cliente
 		cliente1.setApellidos("Lopez Perez");
 		clienteService.modificarCliente(cliente1);
-		System.out.println("Cliente con DNI:  + " + cliente1.getDNI() + " modificado correctamente");
+		System.out.println("Cliente con DNI: " + cliente1.getDNI() + " modificado correctamente");
 	
 		//Listar Clientes Para ver Cambios 
 		System.out.println("Listar Clientes para ver los cambios");
@@ -76,7 +76,7 @@ public class Desafiospring3Application implements CommandLineRunner {
 		System.out.println("Listar Por Nombre y Apellido");
 		List<Cliente> listaClientesPorNombreYApellidos = clienteService.buscarClientePorNombreYApellidos("Rodolfo","Torres Palomares");
 		for (int i = 0; i < listaClientesPorNombreYApellidos.size(); i++) {
-			System.out.println(listaClientesPorNombreYApellidos.get(i).getNombre());
+			System.out.println(listaClientesPorNombreYApellidos.get(i).toString());
 		}
 	}
 
