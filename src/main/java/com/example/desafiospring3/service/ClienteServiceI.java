@@ -10,7 +10,6 @@ public interface ClienteServiceI {
 	void modificarCliente(Cliente cliente);
 	List<Cliente> listarTodosLosClientes();
 	void borrarCliente(Cliente cliente);
-	void borrarClientePorId(Long id);
 	List<Cliente> buscarClientePorNombreYApellidos(String nombre, String apellidos);
 	Cliente buscarClientePorId(Long idCliente);
 	

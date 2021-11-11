@@ -49,7 +49,6 @@ public class Desafiospring3Application implements CommandLineRunner {
 		System.out.println("Cliente con DNI + " + cliente1.getDNI() + " creado correctamente");
 		System.out.println("Cliente con DNI + " + cliente2.getDNI() + " creado correctamente");
 		
-		/*
 		//Listar Clientes y recorrerla
 		System.out.println("Listar todos los clientes");
 		List<Cliente> listaClientes = clienteService.listarTodosLosClientes();
@@ -79,7 +78,6 @@ public class Desafiospring3Application implements CommandLineRunner {
 		for (int i = 0; i < listaClientesPorNombreYApellidos.size(); i++) {
 			System.out.println(listaClientesPorNombreYApellidos.get(i).toString());
 		}
-	
-	*/
 	}
+
 }
