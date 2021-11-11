@@ -9,6 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
+
 @Entity
 @Table(name="clientes")
 public class Cliente {
@@ -25,6 +28,7 @@ public class Cliente {
 	private String apellidos;
 	
 	@Column(name= "FECHA_NACIMIENTO")
+	@DateTimeFormat(pattern = "yyyy-MM-dd" )
 	private Date fechaNacimiento;
 	
 	@Column(name="DNI")
